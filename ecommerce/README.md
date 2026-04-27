@@ -46,8 +46,21 @@ Una plataforma de venta de tecnología completamente funcional enfocada en el me
 
 ## 🎨 Diseño Visual
 - **Tema:** Azul oscuro (#1a1a2e) con acentos en cyan (#00d4ff)
-- **Responsive:** Funciona en computadoras, tablets y celulares
+- **Responsive:** ✅ Completamente adaptable a todo tipo de dispositivos:
+  - 📱 Móviles pequeños (≤ 480px)
+  - 📱 Móviles (481px - 768px)
+  - 📋 Tablets (769px - 1024px)
+  - 🖥️ Desktop (1025px - 1200px)
+  - 🖥️ Desktop Grande (≥ 1201px)
 - **Interfaz Intuitiva:** Siguiendo estándares de ecommerce como Bristol.com.py
+
+## 📱 Optimización Responsive
+La plataforma incluye media queries completas para garantizar una experiencia óptima en cualquier dispositivo:
+- **Header y Navegación:** Se adapta automáticamente con tamaños de fuente y espaciado ajustados
+- **Grid de Productos:** Se ajusta de 4 columnas en desktop a 1-2 en móviles
+- **Carrito Lateral:** Ancho completo en móviles para mejor accesibilidad
+- **Formularios:** Campos en una sola columna en móviles, dos columnas en desktop
+- **Modales:** Optimizados para todos los tamaños de pantalla
 
 ## 🚀 Cómo Usar
 
