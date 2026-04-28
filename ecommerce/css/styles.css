@@ -128,30 +128,43 @@ header {
     background: #00d4ff;
     color: #1a1a2e;
     font-size: 14px;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0, 212, 255, 0.2);
+}
+
+.account-btn:hover {
+    background: #00a8cc;
+    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+.account-btn:active {
+    transform: translateY(0);
 }
 
 @media (max-width: 768px) {
     .account-btn {
-        padding: 6px 10px;
-        font-size: 12px;
+        padding: 8px 14px;
+        font-size: 13px;
     }
 }
 
 @media (max-width: 480px) {
     .account-btn {
-        padding: 5px 8px;
-        font-size: 11px;
+        padding: 8px 12px;
+        font-size: 12px;
+        border-radius: 20px;
+        gap: 3px;
     }
-    border: none;
-    padding: 8px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.account-btn:hover {
-    background: #00a8cc;
 }
 
 .nav-menu {

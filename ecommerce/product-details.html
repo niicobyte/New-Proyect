@@ -11,24 +11,19 @@
     <header>
         <div class="header-top">
             <a href="index.html" class="logo">⚡ TechShop PY</a>
-            
-            <div class="header-actions">
-                <div class="search-bar">
-                    <input type="text" id="searchInput" placeholder="Buscar productos...">
-                    <button onclick="searchAndGo(document.querySelector('#searchInput').value)">🔍</button>
+                <div class="header-actions">
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="Buscar productos...">
+                        <button onclick="searchAndGo(document.querySelector('#searchInput').value)">🔍</button>
+                    </div>
+                    <div class="cart-icon" onclick="toggleCart()">🛒
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="account-menu">
+                        <button class="account-btn" onclick="openAuthModal('login')" title="Iniciar sesión o crear cuenta" aria-label="Mi cuenta">👤 Cuenta</button>
+                    </div>
                 </div>
-
-                <div class="cart-icon" onclick="toggleCart()">
-                    🛒
-                    <span class="cart-count">0</span>
-                </div>
-
-                <div class="account-menu">
-                    <button class="account-btn" onclick="openAuthModal('login')">👤 Cuenta</button>
-                </div>
-            </div>
         </div>
-
         <nav class="nav-menu">
             <a href="index.html">🏠 Inicio</a>
             <a href="products.html?category=notebooks">💻 Notebooks</a>
