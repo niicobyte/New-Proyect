@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@layer utilities {
+  .animate-slide-in {
+    animation: slideIn 0.3s ease;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Smooth scroll behavior */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans bg-light text-gray-800 leading-relaxed;
+  }
+}
+
+/* Auth form styles */
+@layer components {
+  .auth-form {
+    @apply flex flex-col gap-4;
+  }
+
+  .auth-form input,
+  .auth-form select {
+    @apply w-full px-3 py-3 border border-gray-300 rounded-lg text-sm font-family-inherit;
+  }
+
+  .auth-form input:focus,
+  .auth-form select:focus {
+    @apply outline-none border-accent shadow-lg;
+    box-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
+  }
+
+  .toggle-auth {
+    @apply text-center mt-4 text-gray-600;
+  }
+
+  .toggle-auth a {
+    @apply text-accent cursor-pointer no-underline font-bold hover:underline;
+  }
+}

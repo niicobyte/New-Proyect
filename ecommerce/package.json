@@ -1,0 +1,20 @@
+{
+  "name": "techshop-ecommerce",
+  "version": "1.0.0",
+  "description": "TechShop Paraguay - Ecommerce Platform",
+  "main": "index.html",
+  "scripts": {
+    "dev": "tailwindcss -i ./css/input.css -o ./css/styles.css --watch",
+    "build": "tailwindcss -i ./css/input.css -o ./css/styles.css"
+  },
+  "keywords": [
+    "ecommerce",
+    "techshop",
+    "paraguay"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}
